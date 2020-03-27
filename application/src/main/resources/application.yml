@@ -1,6 +1,7 @@
 spring:
   r2dbc:
-    url: jdbc:postgresql://localhost:5433/multi-module
+    url: r2dbc:postgresql://localhost:5432/multi-module
     username: postgres
     password: 123456
     initialization-mode: always
+    name: multi-module
