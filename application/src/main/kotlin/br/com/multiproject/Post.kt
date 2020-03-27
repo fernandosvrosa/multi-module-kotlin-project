@@ -5,8 +5,14 @@
  */
 package br.com.multiproject;
 
+import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Column
 import org.springframework.data.relational.core.mapping.Table
 
 @Table("posts")
-data class Post(@Column val title: String,@Column val content : String)
+data class Post(    @Id
+                   val id : Long,
+
+
+
+                    @Column val title: String,@Column val content : String)
